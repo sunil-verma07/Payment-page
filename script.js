@@ -1,47 +1,25 @@
-// const accordionContent = document.querySelectorAll(".accordion-content");
 
-// accordionContent.forEach((item, index) => {
-//     item.addEventListener("click", () =>{
-//         if (!item.classList.contains("open")) {
-//             accordionContent.forEach((otherItem, otherIndex) => {
-//                 if (otherIndex !== index && otherItem.classList.contains("open")) {
-//                     otherItem.classList.remove("open");
-//                     let otherDescription = otherItem.querySelector(".description");
-//                     otherDescription.style.height = "0px";
-//                     otherItem.querySelector("i").classList.replace("fa-minus", "fa-plus");
-//                 }
-//             });
-
-//             item.classList.add("open");
-//             let description = item.querySelector(".description");
-//             description.style.height = `${description.scrollHeight}px`;
-//             item.querySelector("i").classList.replace("fa-plus", "fa-minus");
-//         }
-//     });
-// });
 // const accordionContent = document.querySelectorAll(".accordion-content");
 
 // accordionContent.forEach((item, index) => {
 //     const radioButton = item.querySelector('input[type="radio"]');
-    
-//     item.addEventListener("click", () => {
+//     const accordionBody = item.querySelector(".accordion-body");
+
+//     radioButton.addEventListener("click", () => {
 //         if (!item.classList.contains("open")) {
 //             accordionContent.forEach((otherItem, otherIndex) => {
 //                 if (otherIndex !== index && otherItem.classList.contains("open")) {
 //                     otherItem.classList.remove("open");
-//                     let otherDescription = otherItem.querySelector(".description");
-//                     otherDescription.style.height = "0px";
-//                     otherItem.querySelector('input[type="radio"]').checked = false;
+//                     otherItem.querySelector(".accordion-body").style.display = "none";
 //                 }
 //             });
 
 //             item.classList.add("open");
-//             let description = item.querySelector(".description");
-//             description.style.height = `${description.scrollHeight}px`;
-//             radioButton.checked = true;
+//             accordionBody.style.display = "block";
 //         }
 //     });
 // });
+
 const accordionContent = document.querySelectorAll(".accordion-content");
 
 accordionContent.forEach((item, index) => {
@@ -61,4 +39,14 @@ accordionContent.forEach((item, index) => {
             accordionBody.style.display = "block";
         }
     });
+
+    // Check the radio button of the middle accordion initially
+    if (index === Math.floor(accordionContent.length / 2)) {
+        radioButton.checked = true;
+        item.classList.add("open");
+        accordionBody.style.display = "block";
+    } else {
+        // Hide accordion-body of unselected accordions
+        accordionBody.style.display = "none";
+    }
 });
