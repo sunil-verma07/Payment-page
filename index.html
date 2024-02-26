@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- =====Fontawesome CDN Link===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Accordion in HTML CSS & JavaScript</title>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="fancy">
+        <span>YAY! It’s BOGO</span>
+      </div>
+      <div class="accordion-content">
+        <header>
+            <input type="radio" name="radio" id="price1" />
+          <div class="heading">
+            <div>
+              <span class="unit-num">1 Unit</span>
+              <span class="unit-off">10% Off</span>
+            </div>
+            <div class="price-type">Standard Price</div>
+          </div>
+
+          <div class="pricing">
+              <span class="real-price">$10.00 USD</span>
+              <span class="dummy-price">$24.00 USD </span>
+          </div>
+        </header>
+
+        <div class="accordion-body">
+            <table>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Color</th>
+                </tr>
+                <tr>
+                  <td>#1</td>
+                  <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                  <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                    <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                  </tr>
+              </table>
+        </div>
+      </div>
+
+     
+
+      <div class="accordion-content">
+
+        <div class="banner">
+            <div class="trapezoid"></div>
+            <div class="label">
+                MOST POPULAR
+            </div>
+    
+        </div>
+      
+        <header>
+            <input type="radio" name="radio" id="price2" />
+          <div class="heading">
+            <div>
+              <span class="unit-num">2 Unit</span>
+              <span class="unit-off">20% Off</span>
+            </div>
+          </div>
+
+          <div class="pricing">
+              <span class="real-price">$18.00 USD</span>
+              <span class="dummy-price">$24.00 USD </span>
+          </div>
+        </header>
+
+        <div class="accordion-body">
+            <table>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Color</th>
+                </tr>
+                <tr>
+                  <td>#1</td>
+                  <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                  <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                    <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                  </tr>
+              </table>
+        </div>
+      </div>
+
+      <div class="accordion-content">
+        <header>
+            <input type="radio" name="radio" id="price3" />
+          <div class="heading">
+            <div>
+              <span class="unit-num">3 Unit</span>
+              <span class="unit-off">30% Off</span>
+            </div>
+          </div>
+
+          <div class="pricing">
+              <span class="real-price">$24.00 USD</span>
+              <span class="dummy-price">$24.00 USD </span>
+          </div>
+        </header>
+
+        <div class="accordion-body">
+            <table>
+                <tr>
+                  <th></th>
+                  <th>Size</th>
+                  <th>Color</th>
+                </tr>
+                <tr>
+                  <td>#1</td>
+                  <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                  <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><select name="size" id=""><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select></td>
+                    <td><select name="color" id=""><option value="black">Black</option><option value="red">Red</option></select></td>
+                  </tr>
+              </table>
+        </div>
+      </div>
+
+      <div class="final-price">
+     <span class="delivery">Free Delivery</span>
+     <span >Total : $18.00 USD</span>
+      </div>
+
+      <button>
+        <i class="fa-solid fa-plus"></i>
+        <span>Add To Cart</span>
+    </button>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+}
+.accordion{
+    background: #FFF;
+    margin: 10px 15px;
+    padding: 39px 59px;
+    box-shadow:  0 0 4px rgba(0,0,0,0.2);
+
+}
+.accordion .accordion-content{
+    margin: 15px 0;
+    background: #fff;
+    border: 1px solid #C8C8C8;
+    /* overflow: hidden; */
+    width: 341px;
+    height: 74.11px;
+    padding: 10px;
+    position: relative;
+
+}
+.accordion-content.open{
+    padding-bottom: 10px;
+    border: 3px solid #FF6B82;
+    height: 174.11px;
+    background-color: #FFF9FA;
+}
+.accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.2s linear;
+    justify-content: space-between;
+    position: relative;
+}
+.accordion-content.open header{
+    display: flex;
+    flex-direction: row;
+}
+.accordion-content input[type="radio"]:checked{
+    background-color: #FF6B82;
+    border: 1px solid #FF6B82;
+    border-radius: 50%;
+    cursor: pointer;
+    font: inherit;
+    height: 1em;
+    outline: none;
+    width: 1em;
+    width: 15px;
+    height: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.accordion-content input[type="radio"]{
+    position: absolute;
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+}
+.accordion-content header .unit-num{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.accordion-content header .heading{
+   margin-left: 25px;
+}
+.accordion-content header .unit-off{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background: #FF6B82;
+    padding:1px 5px;
+}
+.accordion-content header .price-type{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}
+
+.accordion-content header .pricing{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.accordion-content header .real-price{
+    font-size: 14.46px;
+    font-weight: 500;
+    color: #000;
+ }
+
+ .accordion-content header .dummy-price{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.3;
+    text-decoration: line-through;
+    color: #000;
+ }
+.accordion-content header i{
+    font-size: 15px;
+    color: #333;
+}
+.accordion-content .description{
+    height: 0;
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    width: 343px;
+    margin-bottom: 30px;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;
+    color:#FF6B82;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+
+    border-top: 0.9px solid #C8C8C8;
+    top: 2px;
+    width: 93.63px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 5px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 5px;
+  }
+
+  .accordion-body{
+    padding:10px 40px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .accordion-body select{
+    width: 65px;
+    margin: 2px;
+    border:1px solid #D9D9D9;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 3px;
+    outline: none;
+  }
+  table, td, th {  
+    text-align: left;
+ 
+  }
+  .accordion .final-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .accordion .final-price .delivery{
+    display: flex;
+    flex-direction: row;
+    color:#FF6B82;
+    justify-content: space-between;
+  }
+  .accordion button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    width: 100%;
+    margin-top:20px;
+    cursor: pointer;
+    background-color: #FF6B82;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;    
+  }
+  .accordion button span{
+     margin-left: 5px;
+  }
+  .banner{
+    position: absolute;
+    top: -7px;
+    right:0px;
+    z-index: 10;
+  }
+  .banner .trapezoid {
+	border-bottom: 7px solid #D7445B;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	width: 129px;
+}
+.banner .label{
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFF;
+    background-color:#FF6B82;
+    margin:0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0;
+    width: 119px;
+}
